@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>Events</h1>
+        <button @click="add(1)">Add a Year</button>
+        <button v-on:click="subtact(1)">Subtract a Year</button>
+        <button v-on:dblclick="add(10)">Add 10 Years</button>
+        <button @dblclick="subtact(10)">Subtract 10 Years</button>
+        <p>My age is {{ age }}</p>
+        <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+
+        <!-- Lekcja 4 -->
+        <!-- <h1>Data binding</h1>
+        <a :href="website">The net Ninja</a>
+        <input type="text" v-bind:value="job">
+        <p v-html="websiteTag"></p> -->
+
+        <!-- Lekcje 2,3 -->
+        <!-- <h2>{{ greet('afternoon') }}</h2>
+        <p>Name: {{ name }}</p>
+        <p>Job: {{ job }}</p> -->
+      </div>
+      
+      <script src="script.js"></script>
+</body>
+</html>
